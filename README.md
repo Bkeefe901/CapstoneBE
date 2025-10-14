@@ -142,3 +142,39 @@ GardenTrack is a personal gardening companion that helps you organize, monitor, 
       : Get all tips
 - Update: tip by autherID
 - Delete: tip by autherID
+
+
+
+# To Do:
+
+## Create Routes
+
+### User Routes
+- POST register/create user account
+- POST login user
+- GET Profile info
+- DELETE user account (--Stretch--)
+
+### Admin Routes
+- GET all user info
+
+### Plant Routes
+- POST new plants
+- GET all plant information
+- GET plant by id/name
+- PUT update plant info by id (admin)
+- DELETE plant by id (admin)
+
+### UserPlant (GardenPlant)
+-POST create new plant in garden
+- GET all garden plants by userID
+- GET all garden plants by plantID (--stretch--)
+- PUT update gp by id
+- DELETE gp by id
+
+
+
+
+
+
+
