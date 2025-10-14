@@ -13,6 +13,10 @@ const userPlantSchema = new mongoose.Schema(
                 message: props => `User with ID: ${props.value} does not exist`, 
             },
         },
+        name: {
+            type: String,
+            required: true
+        },
         plantId: {
             type: mongoose.Schema.Types.ObjectId,
             ref: "Plant",

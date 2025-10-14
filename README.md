@@ -166,11 +166,11 @@ GardenTrack is a personal gardening companion that helps you organize, monitor, 
 ✅ DELETE plant by id (admin)
 
 ### UserPlant (GardenPlant)
--POST create new plant in garden
-- GET all garden plants by userID
+✅ POST create new plant in garden
+✅ GET all garden plants by userID
 - GET all garden plants by plantID (--stretch--)
-- PUT update gp by id
-- DELETE gp by id
+✅ PUT update gp by id
+✅ DELETE gp by id
 
 
 
