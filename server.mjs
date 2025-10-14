@@ -6,6 +6,7 @@ import { log, globalErr } from './middleware/middleware.mjs';
 import connectDB from './db/conn.mjs';
 import userRoutes from './routes/userRoutes.mjs';
 import authRoutes from './routes/authRoutes.mjs';
+import plantRoutes from './routes/plantRoutes.mjs';
 
 
 // Setup
@@ -25,6 +26,7 @@ app.use(cors());
 // Routes
 app.use("/api/user", userRoutes);
 app.use("/api/auth", authRoutes);
+app.use("/api/plant", plantRoutes);
 
 // Global err handling
 app.use(globalErr);

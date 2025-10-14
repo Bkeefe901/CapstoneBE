@@ -7,11 +7,20 @@ import { check, validationResult } from 'express-validator';
 const router = Router();
 
 router.route("/")
+    // @route: POST api/user
+    // @desc: Create new user
+    // @access: Public 
     .post([
         check("userName", "Please inclued a valid username").isLength({ min: 4}),
         check("password", "Password must be at least 6 characters long").isLength({ min: 6 }),
         check("email", "Please include a valid email").isEmail(),
     ], async (req, res)=>{
+        const errors = validationResult(req);
+
+        if(!errors.isEmpty()) {
+            return res.status(400).json({ errors: errors.array() });
+        }
+
         try {
             const { userName, email, password } = req.body;
 
@@ -42,7 +51,7 @@ router.route("/")
             jwt.sign(
                 payload,
                 process.env.jwtSecret,
-                { expiresIn: "8h" },
+                { expiresIn: "5m" },
                 (err, token) => {
                     if (err) throw err;
 

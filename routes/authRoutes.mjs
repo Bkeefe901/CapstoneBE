@@ -10,8 +10,10 @@ import jwt from 'jsonwebtoken';
 dotenv.config();
 const router = Router();
 
-router
-    .route("/")
+router.route("/")
+    // @route: GET api/auth
+    // @desc: find user by id
+    // @access: Private 
     .get(auth, async (req, res)=>{
         try {
             const user = await User.findById(req.body.id).select("-password");
@@ -22,6 +24,9 @@ router
             res.status(500).json({msg: err.message})
         }
     })
+    // @route: POST api/auth
+    // @desc: Login and authenticate user
+    // @access: Public
     .post(
         [
         check("password", "Please Include a password").not().isEmpty(),
@@ -57,7 +62,7 @@ router
                 jwt.sign(
                     payload,
                     process.env.jwtSecret,
-                    { expiresIn: "8h" },
+                    { expiresIn: "5m" },
                     (err, token) => {
                         if (err) throw err;
 

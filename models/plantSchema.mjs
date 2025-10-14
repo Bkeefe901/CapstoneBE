@@ -26,6 +26,7 @@ const plantSchema = new mongoose.Schema(
         description: {
             type: String,
             maxlength: 150,
+            required: true,
         },
         imageURL: {
             type: String
