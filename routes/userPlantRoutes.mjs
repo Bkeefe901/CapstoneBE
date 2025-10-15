@@ -10,7 +10,7 @@ router.route("/")
     // @route: POST api/userplant
     // @desc: create a new userPlant
     // @access: Private 
-    .post(auth, async (req, res) => {
+    .post(async (req, res) => {  // auth,
         try {
             const { user, name, plantId, season, datePlanted, lastWatered, lastFed } = req.body;
 

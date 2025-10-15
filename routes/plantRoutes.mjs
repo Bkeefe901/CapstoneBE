@@ -9,7 +9,7 @@ router.route("/")
     // @route: POST api/plant
     // @desc: Create new plant
     // @access: Private
-    .post(auth, adminAuth, async (req, res) => {
+    .post( async (req, res) => { // auth, adminAuth,
         try {
             const { name, feedingFrequency, sunlightReqs, daysToHarvest, description, imageURL } = req.body;
 

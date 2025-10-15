@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 //Collections/Models
 import Plant from '../models/plantSchema.mjs';
 import UserPlant from '../models/userPlantSchema.mjs';
+import User from '../models/userSchema.mjs';
 
 //Data
 import plants from './plantData.mjs';
@@ -31,23 +32,23 @@ async function seedDatabase() {
 
         for (let u of userPlants) {
             for (let p of newPlants){
-                if(u.name == p.name){
+                if(u.plantId == p.name){
                     u.plantId = p._id;
                     break;
                 }
             }
         }
-
+        // console.log(userPlants);
         console.log(`✅ Mapped new user plants with new plant id`);
 
         await UserPlant.deleteMany();
         console.log(`✅ Cleared DB of previous user plants...`);
 
-        await UserPlant.create(userPlants);
+        await UserPlant.insertMany(userPlants, { ordered: false });
         console.log(`✅ Seeded DB with user plants`);
 
         console.log(`🌱 Seeding complete, have a nice day!`);
-        process.exit(1);
+        process.exit(0);
 
     } catch (err) {
         console.error(`❌ Error seeding DB... ${err.message}`);
