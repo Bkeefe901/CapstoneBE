@@ -7,7 +7,7 @@ const userPlantSchema = new mongoose.Schema(
             ref: "User",
             validate: {
                 validator: async function (userId) {
-                    const user = await mongoose.model.User.findById({ _id: userId });
+                    const user = await mongoose.models.User.findById({ _id: userId });
                     return !!user;
                 },
                 message: props => `User with ID: ${props.value} does not exist`, 
@@ -22,7 +22,7 @@ const userPlantSchema = new mongoose.Schema(
             ref: "Plant",
             validate: {
                 validator: async function (plantId) {
-                    const plant = await mongoose.model.Plant.findById({ _id: plantId });
+                    const plant = await mongoose.models.Plant.findById({ _id: plantId });
                     return !!plant;
                 },
                 message: props => `Plant with ID: ${props.value} does not exist`, 

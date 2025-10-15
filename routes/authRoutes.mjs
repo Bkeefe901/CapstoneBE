@@ -62,11 +62,11 @@ router.route("/")
                 jwt.sign(
                     payload,
                     process.env.jwtSecret,
-                    { expiresIn: "5m" },
+                    { expiresIn: "1h" },
                     (err, token) => {
                         if (err) throw err;
 
-                        res.json(201).json({ token });
+                        res.status(201).json({ token });
                     }
                 )
 

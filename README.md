@@ -150,27 +150,27 @@ GardenTrack is a personal gardening companion that helps you organize, monitor, 
 ## Create Routes ✅ = created, ✅✅ = tested, and passed
 
 ### User Routes
-✅✅ POST register/create user account
-✅ POST login user (authRoute)
-✅ GET Profile info
+- ✅✅ POST register/create user account
+- ✅✅ POST login user (authRoute)
+- ✅✅ GET Profile info
 - DELETE user account (--Stretch--)
 
 ### Admin Routes
 - GET all user info (authRoute) (--Not Sure if neccesary, keep as stretch for now --)
 
 ### Plant Routes
-✅ POST new plants
-✅ GET all plant information
-✅ GET plant by id/name (--Do I need this or should i just filter in front end?--)
-✅PUT update plant info by id (admin)
-✅ DELETE plant by id (admin)
+- ✅✅ POST new plants (admin)
+- ✅✅ GET all plant information
+- ✅✅ GET plant by id/name (--Do I need this or should i just filter in front end?--)
+- ✅✅ PUT update plant info by id (admin)
+- ✅✅ DELETE plant by id (admin)
 
 ### UserPlant (GardenPlant)
-✅ POST create new plant in garden
-✅ GET all garden plants by userID
+- ✅✅ POST create new plant in garden
+- ✅✅ GET all garden plants by userID
 - GET all garden plants by plantID (--stretch--)
-✅ PUT update gp by id
-✅ DELETE gp by id
+- ✅✅ PUT update gp by id
+- ✅✅ DELETE gp by id
 
 
 

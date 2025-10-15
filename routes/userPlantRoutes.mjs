@@ -18,11 +18,15 @@ router.route("/")
                 return res.status(400).json({ msg: `The fields: user (userId), season and name are required`});
             }
 
-            const existingUser = await User.findById(user);
+            
+
+            const existingUser = await User.findOne({ _id: user });
 
             if(!existingUser){
                 return res.status(400).json({ msg: `No user exists with the ID: ${user}`});
             }
+
+            
 
             let newUserPlant = await UserPlant.create({
                 user,
@@ -34,12 +38,14 @@ router.route("/")
                 lastFed
             });
 
+            console.log("testing...");
+
             res.json({ msg: "New User Plant Created: ", newUserPlant});
         } catch (err) {
             console.error(err.message);
             res.status(500).json({msg: err.message});
         }
-    })
+    });
 
 router.route("/user/:id")
     // @route: GET api/userplant/user/:id
@@ -61,7 +67,7 @@ router.route("/user/:id")
             console.error(err.message);
             res.status(500).json({msg: err.message});
         }
-    })
+    });
     
 router.route("/:id")
     // @route: PUT api/userplant/:id
@@ -102,30 +108,7 @@ router.route("/:id")
             console.error(err.message);
             res.status(500).json({msg: err.message});
         }
-    })
+    });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // async (req, res) => {
-    //     try {
-            
-    //     } catch (err) {
-    //         console.error(err.message);
-    //         res.status(500).json({msg: err.message});
-    //     }
-    // }
+export default router;

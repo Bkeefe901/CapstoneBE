@@ -7,6 +7,7 @@ import connectDB from './db/conn.mjs';
 import userRoutes from './routes/userRoutes.mjs';
 import authRoutes from './routes/authRoutes.mjs';
 import plantRoutes from './routes/plantRoutes.mjs';
+import userPlantRoutes from './routes/userPlantRoutes.mjs';
 
 
 // Setup
@@ -27,6 +28,7 @@ app.use(cors());
 app.use("/api/user", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/plant", plantRoutes);
+app.use("/api/userplant", userPlantRoutes);
 
 // Global err handling
 app.use(globalErr);
