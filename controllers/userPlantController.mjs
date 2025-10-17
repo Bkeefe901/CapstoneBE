@@ -44,7 +44,7 @@ const getAllUsersPlants = async (req, res) => {
         try {
             const user = req.params.id;
 
-            const userPlants = await UserPlant.find({ user: user });
+            const userPlants = await UserPlant.find({ user: user });  // try .populate('plantId')
 
             if(!userPlants){
                 res.status(404).json({ msg: `User with ID: ${user} either does not have plants or does not exist`});

@@ -46,7 +46,7 @@ const registerUser = async (req, res)=>{
             jwt.sign(
                 payload,
                 process.env.jwtSecret,
-                { expiresIn: "1h" },
+                { expiresIn: "6h" },
                 (err, token) => {
                     if (err) throw err;
 
@@ -63,7 +63,7 @@ const registerUser = async (req, res)=>{
 // Get user information by id -----------------------------------------
 const findUser = async (req, res)=>{
         try {
-            const user = await User.findById(req.body.id).select("-password");
+            const user = await User.findById(req.user.id).select("-password");
             
             res.json(user);
         } catch (err) {
@@ -104,20 +104,20 @@ const loginUser = async (req, res)=>{
                 jwt.sign(
                     payload,
                     process.env.jwtSecret,
-                    { expiresIn: "1h" },
+                    { expiresIn: "6h" },
                     (err, token) => {
                         if (err) throw err;
 
                         res.status(201).json({ token });
                     }
-                )
+                );
 
 
                 
                 
             } catch (err) {
                 console.error(err.message);
-                res.status(500).json({msg: err.message})
+                res.status(500).json({msg: `❌ ${err.message}`});
             }
     }
 

@@ -1,5 +1,9 @@
 # Gardening App
 
+## Links
+- [Front End Github](https://github.com/Bkeefe901/CapstoneFE)
+- [Jira](https://gardentracker.atlassian.net/browse/CGS-8?atlOrigin=eyJpIjoiNzMwYzc5ZDdhZjc4NDdkYjhlZjhmMjhhZThmNDY1MDUiLCJwIjoiaiJ9)
+
 ## App Description
 
 GardenTrack is a personal gardening companion that helps you organize, monitor, and improve your garden. Track the progress and health of each plant, set feeding and watering reminders, and access a community of gardeners for tips and troubleshooting advice. Stay on top of your growing season with data, insights, and shared knowledge—all in one place.
