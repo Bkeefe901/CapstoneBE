@@ -12,8 +12,8 @@ const plantSchema = new mongoose.Schema(
         //     type: Number,
         // },
         feedingFrequency: {
-            type: String,
-            default: 'two weeks',
+            type: Number,
+            default: 14,
         },
         sunlightReqs: {
             type: String,

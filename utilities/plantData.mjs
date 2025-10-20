@@ -2,7 +2,7 @@ export default [
     
   {
     name: "purple carrot",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 14,
     sunlightReqs: "full",
     daysToHarvest: 75,
     description: "A vibrant heirloom carrot with deep purple skin and a sweet, earthy flavor. Thrives in loose, well-drained soil and requires consistent watering for best growth.",
@@ -10,7 +10,7 @@ export default [
   },
   {
     name: "basil",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 14,
     sunlightReqs: "full",
     daysToHarvest: 60,
     description: "A fragrant herb popular in Mediterranean cooking. Prefers warm temperatures, rich soil, and at least six hours of direct sunlight per day.",
@@ -18,7 +18,7 @@ export default [
   },
   {
     name: "romaine lettuce",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 14,
     sunlightReqs: "partial",
     daysToHarvest: 70,
     description: "A crisp, leafy green with tall heads and mild flavor. Best grown in cool weather with consistent moisture to prevent bolting.",
@@ -26,7 +26,7 @@ export default [
   },
   {
     name: "strawberry",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 7,
     sunlightReqs: "full",
     daysToHarvest: 90,
     description: "A perennial fruit plant that produces sweet red berries. Requires well-drained soil and ample sunlight for optimal fruiting.",
@@ -34,7 +34,7 @@ export default [
   },
   {
     name: "mint",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 14,
     sunlightReqs: "partial",
     daysToHarvest: 80,
     description: "A hardy perennial herb with a cool, refreshing flavor. Grows aggressively; best kept in containers to prevent spreading.",
@@ -42,7 +42,7 @@ export default [
   },
   {
     name: "cherry tomato",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 7,
     sunlightReqs: "full",
     daysToHarvest: 65,
     description: "Small, sweet tomatoes that grow in clusters. Excellent for snacking and salads; needs full sun and regular pruning.",
@@ -50,7 +50,7 @@ export default [
   },
   {
     name: "kale",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 14,
     sunlightReqs: "partial",
     daysToHarvest: 55,
     description: "A cold-tolerant leafy green rich in nutrients. Prefers cooler weather and can continue producing after light frosts.",
@@ -58,7 +58,7 @@ export default [
   },
   {
     name: "zucchini",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 7,
     sunlightReqs: "full",
     daysToHarvest: 50,
     description: "A fast-growing summer squash known for abundant yields. Requires full sun, well-drained soil, and space for sprawling vines.",
@@ -66,7 +66,7 @@ export default [
   },
   {
     name: "spinach",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 7,
     sunlightReqs: "partial",
     daysToHarvest: 45,
     description: "A cool-weather crop with tender, nutrient-dense leaves. Grows quickly and benefits from partial shade in warmer climates.",
@@ -74,7 +74,7 @@ export default [
   },
   {
     name: "lavender",
-    feedingFrequency: "two weeks",
+    feedingFrequency: 21,
     sunlightReqs: "full",
     daysToHarvest: 110,
     description: "A fragrant perennial herb prized for its calming scent and purple blooms. Requires well-drained soil and full sunlight.",

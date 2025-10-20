@@ -14,7 +14,7 @@ router.route("/user/:id")
     // @route: GET api/userplant/user/:id
     // @desc: get all userPlants for a specific userId
     // @access: Private
-    .get(auth, userPlantCTRL.getAllUsersPlants);
+    .get(auth, userPlantCTRL.getAllUsersPlants); 
     
 router.route("/:id")
     // @route: PUT api/userplant/:id
