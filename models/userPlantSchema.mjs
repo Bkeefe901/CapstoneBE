@@ -40,9 +40,11 @@ const userPlantSchema = new mongoose.Schema(
         },
         lastWatered: {
             type: Date,
+            default: Date.now
         },
         lastFed: {
             type: Date,
+            default: Date.now
         }
        
     }
