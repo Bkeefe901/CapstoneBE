@@ -4,7 +4,7 @@ import User from '../models/userSchema.mjs';
 // Create a new userPlant --------------------------------
 const createUserPlant = async (req, res) => {
         try {
-            const { user, name, plantId, season, datePlanted, lastWatered, lastFed } = req.body;
+            const { user, name, plantId, season, datePlanted, lastWatered, lastFed, feedingFrequency } = req.body;
 
             if(!user || !season || !name ){
                 return res.status(400).json({ msg: `The fields: user (userId), season and name are required`});
@@ -27,7 +27,8 @@ const createUserPlant = async (req, res) => {
                 season,
                 datePlanted,
                 lastWatered,
-                lastFed
+                lastFed,
+                feedingFrequency
             });
 
             console.log("testing...");

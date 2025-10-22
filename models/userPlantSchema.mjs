@@ -45,6 +45,10 @@ const userPlantSchema = new mongoose.Schema(
         lastFed: {
             type: Date,
             default: Date.now
+        },
+        feedingFrequency: {
+            type: Number,
+            default: 14,
         }
        
     }
