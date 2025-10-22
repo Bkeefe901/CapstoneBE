@@ -57,6 +57,7 @@ GardenTrack is a personal gardening companion that helps you organize, monitor, 
 - datePlanted
 - lastWatered
 - lastFed
+- feedingFrequency
 
 
 ##
@@ -64,25 +65,19 @@ GardenTrack is a personal gardening companion that helps you organize, monitor, 
 
 ## User
 - Create: User
-- Read: Get all users (Admin)
-- Update: User information
-- Delete user account
+
 
 ## Plants
 - Create new plant
-- Read: Get plants by ID
-      : Get all plants
-- Update: plant by ID
+- Read: Get all plants
 - Delete: Plant by ID
 
 ## GardenPlant
 - Create: new Garden Plant
-- Read: Get GP by id
-      : Get all GPs by userID
-      : Get all GP's by plantID
+- Read: Get GP by userID
 - Update: GP by id
 - Delete: GP
-- Delete: Many: by userID and season
+
 
 
 
