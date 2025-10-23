@@ -1,8 +1,11 @@
 # Gardening App
 
+### Note: 
+<span style="color:red;">The Main Readme is attached to the front end repo (linked below). This readme is mostly showing the very early planning process.</span>
+
 ## Links
 - [Front End Github](https://github.com/Bkeefe901/CapstoneFE)
-- [Jira](https://gardentracker.atlassian.net/browse/CGS-8?atlOrigin=eyJpIjoiNzMwYzc5ZDdhZjc4NDdkYjhlZjhmMjhhZThmNDY1MDUiLCJwIjoiaiJ9)
+- [Jira](https://gardentracker.atlassian.net/jira/software/projects/CGS/boards/34/timeline?selectedIssue=CGS-4)
 
 ## App Description
 
